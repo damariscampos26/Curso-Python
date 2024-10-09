@@ -1,5 +1,5 @@
-metro = float(input('Digite o valor: '))
-centimetro = metro*100
-milimetro = metro*1000
+metro = float(input('Digite a distância em metros: '))
+centimetro = metro * 100
+milimetro = metro * 1000
 
-print(f'{metro} metros em centímetros é {centimetro}cm  e {milimetro}mm em milímetros.')
+print(f'A medida de {metro}m corresponde a {centimetro}cm  e {milimetro}mm.')
