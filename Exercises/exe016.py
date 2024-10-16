@@ -1,5 +1,5 @@
-dias = int(input('Por quantos dias o carro foi alugado? '))
-km = float(input('Quantos Km percorridos? '))
-total_a_pagar = (dias * 60) + (km * 0.15)
+# Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua parte inteira.
+from math import floor
 
-print(f'O total a pagar é R${total_a_pagar:.2f}.')
+x = float(input('Digite um número real: '))
+print(f'A parte inteira do número {x:.2f} é {floor(x)}.')
