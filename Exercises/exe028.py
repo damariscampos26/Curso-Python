@@ -1,11 +1,15 @@
 #Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi
 #o número escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.
-from random import randrange
+from random import randint
+from time import sleep
 
-n = int(input('Digite qualquer número: '))
-escolhido = randrange(6)
+print('Vou pensar em um número entre 0 e 5. Tente adivinhar...')
+n = int(input('Em que número eu pensei? '))
+print('Processando...')
+sleep(3)
+escolhido = randint(0, 5)
 
 if (n == escolhido):
-    print(f'Você venceu! Seu número é {n} e meu número também é {escolhido}.')
+    print(f'PARABÉNS! Eu estava mesmo pensando no número {escolhido}!')
 else:
-    print(f'Você perdeu! Eu estava pensando em {escolhido}.')
+    print(f'GANHEI! Eu estava pensando em {escolhido} e não no {n}.')
