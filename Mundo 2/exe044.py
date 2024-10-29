@@ -1,0 +1,33 @@
+#Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e 
+# condição de pagamento: 1 - à vista (dinheiro, cheque ou pix): 10% de desconto; à vista no cartão: 5% de 
+# desconto; em até 2x no cartão: preço normal; 3x ou mais no cartão: 20% de juros.
+from time import sleep
+
+print('-'*30) 
+print('Condições de pagamento'.center(30))
+print('-'*30)
+
+preco = float(input('Qual o valor do produto? R$ '))
+
+pgto = int(input(("""\nSelecione uma forma de pagamento:
+      \n1 - À VISTA (DINHEIRO, CHEQUE OU PIX)
+      \n2 - À VISTA NO CARTÃO DE CRÉDITO
+      \n3 - ATÉ 2x NO CARTÃO
+      \n4 - 3x OU MAIS: """)))
+
+print('\nAguarde um momento...')
+sleep(3)
+
+if (pgto == 1):
+    desconto = preco - (preco * 0.10)
+    print(f'\nVocê selecionou "Pagamento à vista" e ganhou um desconto de 10%. O produto custava R${preco:.2f} e sairá por R${desconto:.2f}!')
+elif (pgto == 2):
+    desconto = preco - (preco * 0.05)
+    print(f'\nVocê selecionou "Pagamento à vista no cartão" e ganhou um desconto de 5%. O produto custava R${preco:.2f} e sairá por R${desconto:.2f}!')
+elif (pgto == 3):
+    print(f'\nVocê selecionou "Até 2x no cartão" e o produto sairá pelo valor original de R${preco}!')
+elif (pgto == 4):
+    taxa = preco + (preco*0.20)
+    print(f'\nVocê selecionou "3x ou mais no cartão" e teve aumento de 20%. O produto custava {preco} e sairá por {taxa}')
+else:
+    print('\nSelecione uma opção válida!')

@@ -1,3 +1,4 @@
+#Crie um programa que faça o computador jogar jokenpô com você.
 from random import choice
 from time import sleep
 
@@ -12,14 +13,14 @@ computador = choice(lista)
 print('Analisando...')
 sleep(2)
 
-if (jogador == computador):
-   print(f'EMPATE! Eu escolhi {computador} e você {jogador} também!')
-elif (
-    (jogador == 'papel' and computador == 'pedra') or 
-    (jogador == 'pedra' and computador == 'tesoura') or 
+if (
+    (jogador == 'pedra' and computador == 'tesoura') or
+    (jogador == 'papel' and computador == 'pedra') or  
     (jogador == 'tesoura' and computador == 'papel')
     ):
-    print(f'VOCÊ GANHOU! Eu escolhi {computador} e você {jogador}.')
+    print(f'VOCÊ GANHOU! Eu escolhi {computador}.')
+elif (jogador == computador):
+    print(f'EMPATAMOS! Eu escolhi {computador} e você também!')
 else:
-    print(f'EU GANHEI! :P \nVocê escolheu {jogador} e eu escolhi {computador}.')
+    print(f'EU GANHEI! :P \nEu escolhi {computador}.')
 

@@ -3,7 +3,7 @@
 nota1 = float(input('Qual a primeira nota? '))
 nota2 = float(input('Qual a segunda nota? '))
 
-media = (nota1 + nota2) / 2
+media = ((nota1 + nota2) / 2)
 
 if (media < 5):
     print(f'REPROVADO! Sua média foi {media:.1f}')
