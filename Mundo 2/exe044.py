@@ -30,7 +30,7 @@ elif (opcao == 3):
     print(f'\nVocê parcelou sua compra em 2 vezes de R${total:.2f} e a compra final sairá por R${preco:2f}!')
 elif (opcao == 4):
     parcela = int(input('\nEm quantas vezes você quer parcelar? '))
-    sleep(3)
+    print('\nAnalisando...'); sleep(3)
     taxa = preco + (preco*0.20)
     total = (taxa / parcela)
     print(f'\nVocê parcelou sua compra em {parcela} vezes de R$ {total:.2f} e teve um aumento de 20%. O produto custava R$ {preco:.2f} e sairá por R${taxa:.2f}')
