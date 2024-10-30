@@ -8,7 +8,7 @@ print('-=-'*30)
 sleep(1)
 
 n = int(input('Digite um número inteiro: '))
-o = int(input('Qual será a base de conversão? \n1 - BINÁRIO \n2 - OCTAL \n3 - HEXADECIMAL: '))
+o = int(input('Qual será a base de conversão? \n[1] - BINÁRIO \n[2] - OCTAL \n[3] - HEXADECIMAL \nSUA OPÇÃO:  '))
 
 if (o == 1):
     print(f'Convertendo o número {n} para binário...')

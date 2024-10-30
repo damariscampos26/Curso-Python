@@ -5,7 +5,7 @@ a = float(input('Qual o comprimento do lado A? '))
 b = float(input('Qual o comprimento do lado B? '))
 c = float(input('Qual o comprimento do lado C? '))
 
-if (a == b) and (a == c):
+if (a == b == c):
     print('Triângulo Equilátero!')
 elif (a == b) or (a == c):
     print('Triângulo Isósceles!')

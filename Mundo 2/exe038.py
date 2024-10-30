@@ -5,11 +5,11 @@ from time import sleep
 number1 = int(input('Digite o primeiro número: '))
 number2 = int(input('Digite o segundo número: '))
 print('Verificando...')
-sleep(3)
+sleep(1)
 
-if (number1 == number2):
-    print('Não existe valor maior, os dois são iguais!')
+if (number1 > number2):
+    print('O primeiro valor é maior!')
 elif (number2 > number1):
     print('O segundo valor é maior!')
 else:
-    print('O primeiro valor é maior!')
+    print('Não existe valor maior, os dois são iguais!')

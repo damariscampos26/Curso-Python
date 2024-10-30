@@ -8,10 +8,13 @@ print('-'*20)
 sleep(2)
 
 jogador = input('Você escolhe pedra, papel ou tesoura? ')
-lista = ['pedra', 'papel', 'tesoura']
-computador = choice(lista)
-print('Analisando...')
-sleep(2)
+itens = ['pedra', 'papel', 'tesoura']
+computador = choice(itens)
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO')
 
 if (
     (jogador == 'pedra' and computador == 'tesoura') or

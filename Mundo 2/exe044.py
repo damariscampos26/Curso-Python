@@ -1,6 +1,6 @@
 #Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e 
-# condição de pagamento: 1 - à vista (dinheiro, cheque ou pix): 10% de desconto; à vista no cartão: 5% de 
-# desconto; em até 2x no cartão: preço normal; 3x ou mais no cartão: 20% de juros.
+#condição de pagamento: 1 - à vista (dinheiro, cheque ou pix): 10% de desconto; à vista no cartão: 5% de 
+#desconto; em até 2x no cartão: preço normal; 3x ou mais no cartão: 20% de juros.
 from time import sleep
 
 print('-'*30) 
@@ -10,10 +10,11 @@ print('-'*30)
 preco = float(input('Qual o valor do produto? R$ '))
 
 pgto = int(input(("""\nSelecione uma forma de pagamento:
-      \n1 - À VISTA (DINHEIRO, CHEQUE OU PIX)
-      \n2 - À VISTA NO CARTÃO DE CRÉDITO
-      \n3 - ATÉ 2x NO CARTÃO
-      \n4 - 3x OU MAIS: """)))
+      \n[1] - À VISTA (DINHEIRO, CHEQUE OU PIX)
+      \n[2] - À VISTA NO CARTÃO DE CRÉDITO
+      \n[3] - ATÉ 2x NO CARTÃO
+      \n[4] - 3x OU MAIS 
+      \nSUA OPÇÃO: """)))
 
 print('\nAguarde um momento...')
 sleep(3)

@@ -6,12 +6,11 @@ v = float(input('Qual o valor da casa? R$ '))
 s = float(input('Qual o salário do comprador? R$ '))
 a = int(input('Em quantos anos vai pagar? '))
 
-meses = a*12
-prestacao = (v/meses)
+prestacao = (v / (a * 12))
 
-print(f'\n30% do seu salário equivale a R$ {s*0.3}')
-sleep(3)
 print(f'\nO valor da prestação é R$ {prestacao:.2f}')
+sleep(3)
+print(f'\n30% do seu salário equivale a R$ {s*0.3}')
 sleep(3)
 print('\nAnalisando Empréstimo...')
 sleep(3)
