@@ -9,26 +9,30 @@ print('-'*30)
 
 preco = float(input('Qual o valor do produto? R$ '))
 
-pgto = int(input(("""\nSelecione uma forma de pagamento:
+print("""\nSelecione uma forma de pagamento:
       \n[1] - À VISTA (DINHEIRO, CHEQUE OU PIX)
       \n[2] - À VISTA NO CARTÃO DE CRÉDITO
       \n[3] - ATÉ 2x NO CARTÃO
-      \n[4] - 3x OU MAIS 
-      \nSUA OPÇÃO: """)))
+      \n[4] - 3x OU MAIS""")
+opcao = int(input('\nSUA OPÇÃO: '))
 
 print('\nAguarde um momento...')
 sleep(3)
 
-if (pgto == 1):
+if (opcao == 1):
     desconto = preco - (preco * 0.10)
     print(f'\nVocê selecionou "Pagamento à vista" e ganhou um desconto de 10%. O produto custava R${preco:.2f} e sairá por R${desconto:.2f}!')
-elif (pgto == 2):
+elif (opcao == 2):
     desconto = preco - (preco * 0.05)
     print(f'\nVocê selecionou "Pagamento à vista no cartão" e ganhou um desconto de 5%. O produto custava R${preco:.2f} e sairá por R${desconto:.2f}!')
-elif (pgto == 3):
-    print(f'\nVocê selecionou "Até 2x no cartão" e o produto sairá pelo valor original de R${preco}!')
-elif (pgto == 4):
+elif (opcao == 3):
+    total = (preco / 2)
+    print(f'\nVocê parcelou sua compra em 2 vezes de R${total:.2f} e a compra final sairá por R${preco:2f}!')
+elif (opcao == 4):
+    parcela = int(input('\nEm quantas vezes você quer parcelar? '))
+    sleep(3)
     taxa = preco + (preco*0.20)
-    print(f'\nVocê selecionou "3x ou mais no cartão" e teve aumento de 20%. O produto custava {preco} e sairá por {taxa}')
+    total = (taxa / parcela)
+    print(f'\nVocê parcelou sua compra em {parcela} vezes de R$ {total:.2f} e teve um aumento de 20%. O produto custava R$ {preco:.2f} e sairá por R${taxa:.2f}')
 else:
     print('\nSelecione uma opção válida!')

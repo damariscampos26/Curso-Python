@@ -10,11 +10,12 @@ sleep(2)
 jogador = input('Você escolhe pedra, papel ou tesoura? ')
 itens = ['pedra', 'papel', 'tesoura']
 computador = choice(itens)
+
 print('JO')
 sleep(1)
 print('KEN')
 sleep(1)
-print('PO')
+print('PÔ')
 
 if (
     (jogador == 'pedra' and computador == 'tesoura') or
