@@ -2,7 +2,7 @@
 # de 1s entre eles.
 from time import sleep
 
-for c in range(10, 0, -1):
+for c in range(10, -1, -1):
     print(c)
     sleep(1)
 for i in range(0,3):   
