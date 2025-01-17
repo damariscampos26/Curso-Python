@@ -3,6 +3,8 @@
 sexo = None
 
 while sexo != 'M' and sexo != 'F':
-    print('Digite uma opção válida!')
-    sexo = str(input('Digite o sexo [M / F]: ')).upper()
-print(f'Você digitou a opção {sexo}.')
+    sexo = str(input('Digite o sexo [M / F]: ')).strip().upper()
+    
+    if sexo != 'M' and sexo != 'F':
+        print('\n\033[1;31mDigite uma opção válida!\n\033[m')
+print(f'\n\033[1;32mVocê digitou a opção {sexo}.\n')
