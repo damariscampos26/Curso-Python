@@ -4,7 +4,7 @@
 total = mulheres = homens = 0
 
 while True:
-    print('-'*23); print('CADASTRO UMA PESSOA'); print('-'*23)
+    print('-'*23); print('CADASTRE UMA PESSOA'); print('-'*23)
     idade = int(input('Qual a idade? '))
 
     while True:

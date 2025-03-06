@@ -21,7 +21,7 @@ print(f'Times em ordem Alfabética: {sorted(times)}')
 print('-='*30)
 
 # d)Em que posição na tabela está o time da Chapecoense.
-if  'Chapecoense' in times:
+if 'Chapecoense' in times:
     posicao_chapecoense = times.index("Chapecoense") + 1 # Somamos 1 ao índice para exibir a posição humana (começando em 1).
     print(f'O time Chapecoense está em {posicao_chapecoense}° lugar.')
 else:
